@@ -44,10 +44,10 @@ void Alphabet::toBinary(String aString, AbstractByteConsumer* consumer) {
 			consumer->consumeBytes(Alphabet::rbra, 5);
 			break;
 		case '{':
-			consumer->consumeBytes(Alphabet::lpar, 5);
+			consumer->consumeBytes(Alphabet::lcurly, 5);
 			break;
 		case '}':
-			consumer->consumeBytes(Alphabet::rpar, 5);
+			consumer->consumeBytes(Alphabet::rcurly, 5);
 			break;
 		case '<':
 			consumer->consumeBytes(Alphabet::lab, 5);
