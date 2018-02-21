@@ -5,6 +5,7 @@
 
 class AbstractByteConsumer {
 	public:
+		virtual ~AbstractByteConsumer() {}
 		virtual void consumeBytes(byte bytes[], int size);
 };
 #endif
