@@ -8,7 +8,7 @@ public:
 	void toBinary(String aString, AbstractByteConsumer* consumer);
 private:
 	void consumeBytes(byte bytes[]);
-	// Size approx: 480 bytes
+	// Size approx: 96*6 = 576 bytes
 	String alpha = " !?/\\,.:;()[]{}<>~`'\"^_#$%&*+-|=@0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	byte letters[96][6] = {
 			{ 3, 0x00, 0x00, 0x00 }, //space
