@@ -16,7 +16,6 @@ void LedMarqueeByteConsumer::setup() {
 	}
 }
 
-
 void LedMarqueeByteConsumer::letterSpace() {
 	// letter spacing 1 column
 	for (int j = 0; j < 7; j++) {
@@ -34,6 +33,7 @@ void LedMarqueeByteConsumer::consumeBytes(byte bytes[], int byteArraySize) {
 			int aBit = bitRead(aByte, (7 - rowIndex));
 			digitalWrite(_settings->dataPins[rowIndex], aBit);
 		}
+		_afterLetterCallback();
 		this->strobe();
 	}
 }
